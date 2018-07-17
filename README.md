@@ -1,6 +1,6 @@
 # TaggedObjectsLogger
 
-Welcome to TaggedObjectsLogger Gem. This gem is created for the reason of logging error, warning, info, bug and unknown messages. All gem methods inherited from Ruby logger.
+Welcome to TaggedObjectsLogger Gem. This gem is created for the reason of logging error, warning, info, bug and unknown messages in a custom format. All gem methods inherited from Ruby logger.
 
 ## Installation
 
@@ -20,12 +20,12 @@ Or install it yourself as:
 
 And then add this line to your environment configuration file:
 ```ruby
-config.logger = TaggedObjectsLogger.instance
+config.logger = TaggedLogger.instance
 ```
 
 ## Usage
 
-This gem logs errors, info, bugs, warning, unknown messages and fatal errors.
+After configuring environment logger variable with TaggedLogger instance you can use This gem to log errors, info, bugs, warning, unknown messages and fatal errors.
 This gem tags object by its class name and ID in the log file.
 
 ## Development
